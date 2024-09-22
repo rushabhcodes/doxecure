@@ -82,10 +82,9 @@ export const initialNodes: AppNode[] = [
   {
     id: "blockchain",
     type: "blockchain",
-    position: { x: 1000, y: 100 },
+    position: { x: 1000, y: 50 },
     data: { label: "Blockchain" },
-
-  }
+  },
 ];
 
 export const nodeTypes = {
@@ -94,6 +93,6 @@ export const nodeTypes = {
   doxcure: DoxcureNode,
   "issueing-authority": IssueingAuthorityNode,
   "verifying-authority": VerifyingAuthorityNode,
-  "blockchain": BlockchainNode,
+  blockchain: BlockchainNode,
   // Add any of your custom nodes here!
 } satisfies NodeTypes;

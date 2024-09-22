@@ -7,7 +7,6 @@ import {
   addEdge,
   useNodesState,
   useEdgesState,
- 
 } from "@xyflow/react";
 
 import "@xyflow/react/dist/style.css";
@@ -24,22 +23,23 @@ export default function App() {
     [setEdges]
   );
 
-  return (<div style={{ width: '100vw', height: '100vh' }}>
-    <ReactFlow  
-      nodes={nodes}
-      nodeTypes={nodeTypes}
-      onNodesChange={onNodesChange}
-      edges={edges}
-      edgeTypes={edgeTypes}
-      onEdgesChange={onEdgesChange}
-      onConnect={onConnect}
-      colorMode="dark"
-      fitView
-    >
-      <Background variant="dots" />
-      <MiniMap />
-      <Controls />
-    </ReactFlow>
+  return (
+    <div style={{ width: "100vw", height: "100vh" }}>
+      <ReactFlow
+        nodes={nodes}
+        nodeTypes={nodeTypes}
+        onNodesChange={onNodesChange}
+        edges={edges}
+        edgeTypes={edgeTypes}
+        onEdgesChange={onEdgesChange}
+        onConnect={onConnect}
+        colorMode="dark"
+        fitView
+      >
+        <Background variant="dots" />
+        <MiniMap />
+        <Controls />
+      </ReactFlow>
     </div>
   );
 }

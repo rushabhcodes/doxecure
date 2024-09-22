@@ -9,15 +9,18 @@ export function DoxcureNode({ data }: NodeProps<UserNode>) {
       {data.label && <div className="pb-2 flex px-4 ">{data.label}</div>}
       <hr />
       <div className="flex m-4 gap-4">
-        <button>View</button>
-        <button>Download</button>
-        <button>Share</button>
+        <div>Documents</div>
       </div>
 
-      <Handle type="target" position={Position.Left} id="a" className="top-10" /> 
-      <Handle type="target" position={Position.Left} id="b"  /> 
-      <Handle type="source" position={Position.Bottom } />
-      <Handle type="source" position={Position.Right } id="a"/>
+      <Handle
+        type="target"
+        position={Position.Left}
+        id="a"
+        className="top-10"
+      />
+      <Handle type="target" position={Position.Left} id="b" />
+      <Handle type="source" position={Position.Bottom} />
+      <Handle type="source" position={Position.Right} id="a" />
     </div>
   );
 }
