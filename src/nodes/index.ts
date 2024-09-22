@@ -76,7 +76,7 @@ export const initialNodes: AppNode[] = [
   {
     id: "verifying-authority",
     type: "verifying-authority",
-    position: { x: 500, y: 200 },
+    position: { x: 500, y: 300 },
     data: { label: "Verifying Authority" },
   },
   {
