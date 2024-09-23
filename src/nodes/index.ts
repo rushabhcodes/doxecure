@@ -2,7 +2,7 @@ import type { Node, NodeTypes, BuiltInNode } from "@xyflow/react";
 import { PositionLoggerNode } from "./PostionLoggerNode";
 import { UserNode } from "./UserNode";
 import { DoxcureNode } from "./DoxecureNode";
-import { IssueingAuthorityNode } from "./IssueingAuthorityNode";
+import { IssuingAuthorityNode } from "./IssuingAuthorityNode";
 import { VerifyingAuthorityNode } from "./VerifyingAuthority";
 import { BlockchainNode } from "./BlockchainNode";
 
@@ -26,11 +26,11 @@ export type DoxcureNode = Node<
   },
   "doxcure"
 >;
-export type IssueingAuthorityNode = Node<
+export type IssuingAuthorityNode = Node<
   {
     label?: string;
   },
-  "issueing-authority"
+  "issuing-authority"
 >;
 export type VerifyingAuthorityNode = Node<
   {
@@ -50,7 +50,7 @@ export type AppNode =
   | PositionLoggerNode
   | UserNode
   | DoxcureNode
-  | IssueingAuthorityNode
+  | IssuingAuthorityNode
   | VerifyingAuthorityNode
   | BlockchainNode;
 
@@ -59,25 +59,25 @@ export const initialNodes: AppNode[] = [
     id: "user",
     type: "user",
     position: { x: 0, y: 100 },
-    data: { label: "User" },
+    data: { label: "Student" },
   },
   {
     id: "doxcure",
     type: "doxcure",
     position: { x: 500, y: 0 },
-    data: { label: "Doxcure" },
+    data: { label: "Doxecure" },
   },
   {
-    id: "issueing-authority",
-    type: "issueing-authority",
+    id: "issuing-authority",
+    type: "issuing-authority",
     position: { x: 0, y: -100 },
-    data: { label: "Issueing Authority" },
+    data: { label: "University" },
   },
   {
     id: "verifying-authority",
     type: "verifying-authority",
     position: { x: 500, y: 300 },
-    data: { label: "Verifying Authority" },
+    data: { label: "Company" },
   },
   {
     id: "blockchain",
@@ -91,7 +91,7 @@ export const nodeTypes = {
   "position-logger": PositionLoggerNode,
   user: UserNode,
   doxcure: DoxcureNode,
-  "issueing-authority": IssueingAuthorityNode,
+  "issuing-authority": IssuingAuthorityNode,
   "verifying-authority": VerifyingAuthorityNode,
   blockchain: BlockchainNode,
   // Add any of your custom nodes here!

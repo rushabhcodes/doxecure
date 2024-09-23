@@ -3,7 +3,7 @@ import { type UserNode } from "./index";
 import { Handle, Position, type NodeProps } from "@xyflow/react";
 import {useDocStore} from "../store/doc-store"
 
-export function IssueingAuthorityNode({ data }: NodeProps<UserNode>) {
+export function IssuingAuthorityNode({ data }: NodeProps<UserNode>) {
   const [file, setFile] = useState<File | undefined>();
   const doc = useDocStore((state) => state.docs);
   const addDoc = useDocStore((state) => state.addDoc);
