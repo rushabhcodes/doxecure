@@ -3,8 +3,8 @@ import type { Edge, EdgeTypes } from "@xyflow/react";
 export const initialEdges = [
   { id: "user->doxcure", source: "user", target: "doxcure", targetHandle: "b" },
   {
-    id: "issueing-authoruty->doxcure",
-    source: "issueing-authority",
+    id: "issuing-authoruty->doxcure",
+    source: "issuing-authority",
     target: "doxcure",
     targetHandle: "a",
     animated: true,
